@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table{
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      td,th{
+        padding: 1rem;
+      }
+      th{
+        background-color: #000;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      td{
+        color: #333;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form>
+      <input type="text" placeholder="Nombre" name="" id="" required/>
+      <input type="search" name="" id="" />
+      <input type="tel" placeholder="Telefono" name="" id="" required/>
+      <input type="url" name="" id="" placeholder="url" readonly />
+      <input type="email" placeholder="email" name="" id="" disabled />
+      <input type="password" name="" id="" />
+      <input type="hidden" name="" id="" />
+      <textarea
+        name="texto"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Texto"></textarea>
+
+      <input type="number" name="num" value="25" min="10" max="50" step="5" />
+
+      <input type="range" name="rng" value="25" min="10" max="50" step="1" />
+
+      <input
+        type="date"
+        name="fecha"
+        min="2010-03-25"
+        max="2018-05-25"
+        step="1" />
+
+      <input type="time" name="hora" min="18:00" max="21:00" step="3600" />
+
+      <p>
+        Sexo:
+        <input type="radio" name="sexo" value="H" checked /> Hombre
+        <input type="radio" name="sexo" value="M" /> Mujer
+      </p>
+
+      <input type="checkbox" name="empresa" checked />
+      ¿Eres autónomo/empresa?
+      <br />
+      <br />
+      Selecciona la opción deseada:
+      <select name="combo">
+        <!-- Opciones de la lista -->
+        <option value="1" selected>Opción 1</option>
+        <option value="2">Opción 2</option>
+        <!-- Opción por defecto -->
+        <option value="3">Opción 3</option>
+      </select>
+
+      <br />
+      <br />
+
+      <select name="combo" multiple>
+        <!-- Formato alternativo con atributo label -->
+        <optgroup label="Opciones básicas">
+          <option value="1" label="Opcion 1"></option>
+        </optgroup>
+
+        <optgroup label="Opciones avanzadas">
+          <option value="2" label="Opcion 2"></option>
+          <option value="3" label="Opcion 3"></option>
+        </optgroup>
+      </select>
+
+      <input type="submit" value="Enviar Formulario" />
+      <input type="image" src="./boton.png" alt="Enviar" />
+      <input type="button" value="enviar" />
+    </form>
+
+
+
+    <table>
+      <tr>
+        <th>Titulo de columna 1</th>
+        <th>Titulo de columna 2</th>
+        <th>Titulo de columna 3</th>
+        <th>Titulo de columna 4</th>
+      </tr>
+      <tr>
+        <td>celda 1x1</td>
+        <td>celda 2x1</td>
+        <td>celda 3x1</td>
+      </tr>
+      <tr>
+        <td>celda 1x2</td>
+        <td>celda 2x2</td>
+        <td>celda 3x2</td>
+      </tr>
+    </table>
+  </body>
+</html>
